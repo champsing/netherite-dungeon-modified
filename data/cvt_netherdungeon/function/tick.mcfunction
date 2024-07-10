@@ -1,6 +1,6 @@
 #Timer & AEC spreading
 execute as @r[predicate=cvt_netherdungeon:in_nether] run scoreboard players add cvt_netherdungeontimer cvt_scanprogress 1
-execute if score dungeon_availability cvt_dungeonstatus matches 1 if score cvt_netherdungeontimer cvt_scanprogress = search_time cvt_dungeonstatus as @a[gamemode=!spectator,predicate=cvt_netherdungeon:in_nether] at @s unless entity @e[tag=cvt_dungeonmarker,distance=..30] run function cvt_netherdungeon:loadaec
+execute if score 生成地牢 cvt_dungeonconfig matches 1 if score cvt_netherdungeontimer cvt_scanprogress = 搜尋時間 cvt_dungeonconfig as @a[gamemode=!spectator,predicate=cvt_netherdungeon:in_nether] at @s unless entity @e[tag=cvt_dungeonmarker,distance=..30] run function cvt_netherdungeon:loadaec
 
 #Check for existing dungeon # search upwards
 execute as @e[tag=cvt_nethersearch] at @s if entity @e[tag=cvt_dungeonmarker,distance=..30] run kill @s
