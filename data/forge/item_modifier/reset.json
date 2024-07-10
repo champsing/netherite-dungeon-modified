@@ -1,11 +1,17 @@
 [
     {
       "function": "minecraft:set_lore",
+      "mode": "replace_all",
       "entity": "this",
       "lore": []
     },
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{AttributeModifiers:[],forged:\"reset\"}"
+        "function": "minecraft:set_components",
+        "components": {
+          "!attribute_modifiers": {},
+          "custom_data": {
+            "forged": "reset"
+          } 
+        }
     }
   ]
