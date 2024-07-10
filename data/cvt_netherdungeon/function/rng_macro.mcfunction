@@ -1,0 +1,1 @@
+$execute if score @s cvt_dungeonrng matches $(rngscore) run place template cvt_netherdungeon:rooms/$(room_name) $(dX) 0 $(dZ)

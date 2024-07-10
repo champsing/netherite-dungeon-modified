@@ -1,8 +1,9 @@
 #UUID RNG(--71..70)
-execute store result score @s cvt_dungeonrng run data get entity @s UUID[0] 0.0000000330619513988494873046875
+execute store result score @s cvt_dungeonrng run random roll -71..70
 
 #Structure Selection
-$execute if score @s cvt_dungeonrng matches ${rngscore} run place template cvt_netherdungeon:rooms/${room_name} ${dX} 0 ${dZ}
+#rng_macro takes 4 parameters: rngscore, room_name, dX, dZ 
+function cvt_netherdungeon:rng_macro {rngscore: -71..-70, room_name: 001, dX: -3, dZ: -3}
 execute if score @s cvt_dungeonrng matches -71..-70 run place template cvt_netherdungeon:rooms/001 -3 0 -3
 execute if score @s cvt_dungeonrng matches -69..-68 run place template cvt_netherdungeon:rooms/002 -3 0 -3
 execute if score @s cvt_dungeonrng matches -67..-66 run place template cvt_netherdungeon:rooms/003 -3 0 -3
