@@ -5,16 +5,16 @@
         [
             {
                 "attribute": "minecraft:generic.attack_damage",
-                "name": "first_time_base",
+                "id": "first_time_base",
                 "amount": 8,
-                "operation": "addition",
+                "operation": "add_value",
                 "slot": "mainhand"
             },
             {
                 "attribute": "minecraft:generic.attack_speed",
-                "name": "first_time_base",
+                "id": "first_time_base",
                 "amount": -2.4,
-                "operation": "addition",
+                "operation": "add_value",
                 "slot": "mainhand"
             }
         ]

@@ -4,15 +4,16 @@
       "modifiers": [
         {
           "attribute": "minecraft:generic.attack_damage",
-          "name": "first_level_forge",
+          "id": "first_level_forge",
           "amount": 1,
-          "operation": "multiply_total",
+          "operation": "add_multiplied_total",
           "slot": "mainhand"
         }
       ]
     },
     {
       "function": "minecraft:set_lore",
+      "mode": "append",
       "entity": "this",
       "lore": [
         {
@@ -22,7 +23,11 @@
       ]
     },
     {
-      "function": "minecraft:set_nbt",
-      "tag": "{forged:2}"
+      "function": "minecraft:set_components",
+      "components": {
+        "custom_data": {
+            "forged": 2
+        }
+    }
     }
   ]
