@@ -3,8 +3,8 @@
         "title": "獄髓地牢",
         "description": "挖獄髓的同時探索新挑戰！",
         "icon": {
-			"id": "minecraft:netherite_block"
-		},
+            "id": "minecraft:netherite_block"
+        },
         "show_toast": false,
         "announce_to_chat": false
     },

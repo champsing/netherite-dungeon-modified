@@ -16,7 +16,8 @@
                 }
               },
               {
-                "function": "minecraft:looting_enchant",
+                "function": "minecraft:enchanted_count_increase",
+                "enchantment": "minecraft:looting",
                 "count": {
                   "min": 0.0,
                   "max": 1.0
@@ -34,7 +35,7 @@
             "conditions": [
               {
                 "condition": "minecraft:random_chance",
-                "chance":0.005
+                "chance": 0.005
               }
             ],
             "type": "minecraft:item",
@@ -49,6 +50,7 @@
               },
               {
                 "function": "minecraft:set_lore",
+                "mode": "replace_all",
                 "lore": [
                   "獄髓地牢限定物品-緋紅凋零骷髏"
                 ]
@@ -56,12 +58,20 @@
               {
                 "function": "minecraft:set_name",
                 "name": [
-                  {"bold":true,"color":"green","text":"鍛冶之炎源"}
+                  {
+                    "bold": true,
+                    "color":"green",
+                    "text":"鍛冶之炎源"
+                  }
                 ]
               },
               {
-                "function": "set_nbt",
-                "tag": "{Updated:1.4}"
+                "function": "set_components",
+                "components": {
+                  "custom_data": {
+                    "updated": 2.0
+                  }
+                }
               }
             ],
             "name": "minecraft:blaze_powder"

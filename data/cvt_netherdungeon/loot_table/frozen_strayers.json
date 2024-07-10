@@ -1,83 +1,82 @@
 {
-    "type": "minecraft:entity",
-    "pools": 
-    [
-      {
-        "rolls": 1,
-        "entries":
-        [
-          {
-            "type": "minecraft:item",
-            "functions": 
-            [
-              {
-                "function": "minecraft:set_count",
-                "count": 
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": -1.0,
+                "max": 1.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "enchantment": "minecraft:looting",
+              "count": {
+                "min": 0.0,
+                "max": 1.0
+              }
+            }
+          ],
+          "name": "minecraft:snow_block"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.005
+            }
+          ],
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0.0,
+                "max": 1.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "獄髓地牢限定物品-寒霜冰川流浪者"
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
                 {
-                  "min": -1.0,
-                  "max": 1.0,
-                  "type": "minecraft:uniform"
+                  "bold": true,
+                  "color": "dark_aqua",
+                  "text": "鍛冶之寒源"
                 }
-              },
-              {
-                "function": "minecraft:looting_enchant",
-                "count": 
-                {
-                  "min": 0.0,
-                  "max": 1.0
+              ]
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "updated": 2.0
                 }
               }
-            ],
-            "name": "minecraft:snow_block"
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": 
-        [
-          {
-            "conditions": 
-            [
-              {
-                "condition": "minecraft:random_chance",
-                "chance":0.005
-              }
-            ],
-            "type": "minecraft:item",
-            "functions": 
-            [
-              {
-                "function": "minecraft:set_count",
-                "count": 
-                {
-                  "min": 0.0,
-                  "max": 1.0,
-                  "type": "minecraft:uniform"
-                }
-              },
-              {
-                "function": "minecraft:set_lore",
-                "lore": 
-                [
-                  "獄髓地牢限定物品-寒霜冰川流浪者"
-                ]
-              },
-              {
-                "function": "minecraft:set_name",
-                "name": 
-                [
-                  {"bold":true,"color":"dark_aqua","text":"鍛冶之寒源"}
-                ]
-              },
-              {
-                "function": "set_nbt",
-                "tag": "{Updated:1.4}"
-              }
-            ],
-            "name": "minecraft:light_blue_dye"
-          }
-        ]
-      }
-    ]
-  }
+            }
+          ],
+          "name": "minecraft:light_blue_dye"
+        }
+      ]
+    }
+  ]
+}

@@ -1,31 +1,28 @@
 {
-    "display": 
-    {
+    "display": {
         "title": "讚嘆元素之奧",
         "description": "鍛造任一類型的二階鍛造武器",
         "icon": {
-			"id": "minecraft:potion",
+            "id": "minecraft:potion",
             "components": {
                 "potion_contents": {
                     "custom_color": 1496807
                 }
             }
-		},
+        },
         "show_toast": true,
         "announce_to_chat": true,
         "frame": "challenge"
     },
     "parent": "forge:elements_practicer",
     "criteria": {
-        "firstLevel":
-        {
+        "firstLevel": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "count":
-                        {
-                            "min":1
+                        "count": {
+                            "min": 1
                         },
                         "components": {
                             "custom_data": {

@@ -1,24 +1,22 @@
 {
-    "display": 
-    {
+    "display": {
         "title": "百之刃",
         "description": "利用鍛造武器一次造成100點傷害",
         "icon": {
-			"id": "minecraft:potion",
+            "id": "minecraft:potion",
             "components": {
                 "potion_contents": {
                     "custom_color": 1175480
                 }
             }
-		},
+        },
         "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true
     },
     "parent": "forge:elements_collector",
     "criteria": {
-        "hundred":
-        {
+        "hundred": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "damage": {
@@ -26,7 +24,7 @@
                     "type": {
                         "tags": [
                             {
-                                "expected":true,
+                                "expected": true,
                                 "id": "bypasses_armor"
                             }
                         ]
