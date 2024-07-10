@@ -1,0 +1,11 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": []
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{AttributeModifiers:[],forged:\"reset\"}"
+    }
+  ]

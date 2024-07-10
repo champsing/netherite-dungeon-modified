@@ -1,0 +1,28 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "name": "first_level_forge",
+          "amount": 1,
+          "operation": "multiply_total",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "二級元素鍛造：兩倍攻擊傷害",
+          "color": "light_purple"
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{forged:2}"
+    }
+  ]

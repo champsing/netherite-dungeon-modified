@@ -1,0 +1,32 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "name": "first_level_forge",
+          "amount": 
+          {
+            "min":3,
+            "max":5
+          },
+          "operation": "addition",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "text": "一級元素鍛造：+3~5攻擊傷害",
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{forged:1}"
+    }
+  ]

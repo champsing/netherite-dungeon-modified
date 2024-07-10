@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Netherite Dungeons",
+        "description": "Explore new challenges while mining for netherite!",
+        "icon": {
+			"item": "minecraft:netherite_block"
+		},
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "cvt_netherdungeon:civetkitty",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

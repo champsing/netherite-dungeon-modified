@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0.0,
+                  "max": 1.0,
+                  "type": "minecraft:uniform"
+                }
+              },
+              {
+                "function": "minecraft:looting_enchant",
+                "count": {
+                  "min": 0.0,
+                  "max": 1.0
+                }
+              }
+            ],
+            "name": "minecraft:paper"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": 
+            [
+              {
+                "function": "minecraft:set_count",
+                "count": 
+                {
+                  "max": 1.0,
+                  "min": 0.0,
+                  "type": "minecraft:binomial",
+                  "n": 2,
+                  "p": 0.5
+                },
+                "conditions": 
+                [
+                  {
+                    "condition": "minecraft:killed_by_player"
+                  },
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.03
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"你以為這是彩蛋嗎？對，這就是彩蛋\",\"color\":\"green\"}'},SkullOwner:\"oreki20\"}"
+              }
+            ],
+            "name": "minecraft:player_head"
+          }
+        ]
+      }
+    ]
+  }

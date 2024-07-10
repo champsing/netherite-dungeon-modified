@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "資深獄髓收藏家",
+        "description": "探索1500個獄髓地牢",
+        "icon": {
+			"item": "minecraft:netherite_scrap"
+		},
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    
+    "parent": "cvt_netherdungeon:netherite_richman",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

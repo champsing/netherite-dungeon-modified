@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "count": 1,
+                "nbt": "{recipeLevel:1}",
+                "items": [
+                    "minecraft:knowledge_book"
+                ]
+            },
+            "mainhand": {
+                "count": 1,
+                "nbt": "{forged:1}",
+                "items": [
+                    "minecraft:netherite_sword"
+                ]
+            }
+        }
+    }
+}

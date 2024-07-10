@@ -1,0 +1,72 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": -1.0,
+                  "max": 1.0,
+                  "type": "minecraft:uniform"
+                }
+              },
+              {
+                "function": "minecraft:looting_enchant",
+                "count": {
+                  "min": 0.0,
+                  "max": 1.0
+                }
+              }
+            ],
+            "name": "minecraft:coal"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance":0.005
+              }
+            ],
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0.0,
+                  "max": 1.0,
+                  "type": "minecraft:uniform"
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  "獄髓地牢限定物品-緋紅凋零骷髏"
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {"bold":true,"color":"green","text":"鍛冶之炎源"}
+                ]
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{Updated:1.4}"
+              }
+            ],
+            "name": "minecraft:blaze_powder"
+          }
+        ]
+      }
+    ]
+  }

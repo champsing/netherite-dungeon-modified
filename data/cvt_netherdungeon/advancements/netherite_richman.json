@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "獄髓小開",
+        "description": "探索1000個獄髓地牢",
+        "icon": {
+			"item": "minecraft:netherite_ingot"
+		},
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    
+    "parent": "cvt_netherdungeon:netherite_discoverer",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

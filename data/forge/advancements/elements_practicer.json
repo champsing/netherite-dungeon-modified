@@ -1,0 +1,31 @@
+{
+    "display": 
+    {
+        "title": "駕馭元素之心",
+        "description": "鍛造任一類型的一階鍛造武器",
+        "icon": {
+			"item": "minecraft:potion",
+            "nbt": "{CustomPotionColor:16446991}"
+		},
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "forge:elements_collector",
+    "criteria": {
+        "firstLevel":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count":
+                        {
+                            "min":1
+                        },
+                        "nbt": "{forged:1}"
+                    }
+                ]
+            }
+        }
+    }
+}

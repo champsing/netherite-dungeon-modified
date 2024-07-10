@@ -1,0 +1,54 @@
+{
+    "display": 
+    {
+        "title": "初探元素之力",
+        "description": "獲得一本任意種類的鍛造配方",
+        "icon": {
+			"item": "minecraft:potion",
+            "nbt": "{CustomPotionColor:10017554}"
+		},
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "cvt_netherdungeon:packicon",
+    "criteria": {
+        "firstLevel":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count":
+                        {
+                            "min":1
+                        },
+                        "nbt": "{recipeLevel:1}"
+                    }
+                ]
+            }
+        },
+        "secondLevel":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": 
+                        {
+                            "min":1
+                        },
+                        "nbt": "{recipeLevel:2}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":
+    [
+        [
+            "firstLevel",
+            "secondLevel"
+        ]
+    ]
+}

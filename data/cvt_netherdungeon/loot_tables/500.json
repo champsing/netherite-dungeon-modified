@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance":0.001
+            }
+          ],
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0.0,
+                "max": 1.0,
+              "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "500塊"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text":"廢紙","bold":true,"color":"green"}
+              ]
+            },
+            {
+              "function": "set_nbt",
+                "tag": "{tag:{Updated:1.33}}"
+            }
+          ],
+          "name": "minecraft:paper"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries":
+      [
+        {
+          "type":"minecraft:loot_table",
+          "name":"cvt_netherdungeon:frozen_strayers"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "values": 
+  [
+    "cvt_netherdungeon:tick",
+    "cvt_netherdungeon:advancement",
+    "forge:tick"
+  ]
+}
