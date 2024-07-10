@@ -5,7 +5,11 @@
         "equipment": {
             "mainhand": {
                 "count": 1,
-                "nbt": "{forged:2}"
+                "components": {
+                    "custom_data": {
+                        "forged": 2
+                    }
+                }
             }
         }
     }
