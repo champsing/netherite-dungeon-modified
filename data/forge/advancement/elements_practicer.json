@@ -4,8 +4,12 @@
         "title": "駕馭元素之心",
         "description": "鍛造任一類型的一階鍛造武器",
         "icon": {
-			"item": "minecraft:potion",
-            "nbt": "{CustomPotionColor:16446991}"
+			"id": "minecraft:potion",
+            "components": {
+                "potion_contents": {
+                    "custom_color": 16446991
+                }
+            }
 		},
         "show_toast": true,
         "announce_to_chat": true
@@ -22,7 +26,11 @@
                         {
                             "min":1
                         },
-                        "nbt": "{forged:1}"
+                        "components": {
+                            "custom_data": {
+                                "forge": 1
+                            }
+                        }
                     }
                 ]
             }

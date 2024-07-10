@@ -4,8 +4,12 @@
         "title": "讚嘆元素之奧",
         "description": "鍛造任一類型的二階鍛造武器",
         "icon": {
-			"item": "minecraft:potion",
-            "nbt": "{CustomPotionColor:1496807}"
+			"id": "minecraft:potion",
+            "components": {
+                "potion_contents": {
+                    "custom_color": 1496807
+                }
+            }
 		},
         "show_toast": true,
         "announce_to_chat": true,
@@ -23,7 +27,11 @@
                         {
                             "min":1
                         },
-                        "nbt": "{forged:2}"
+                        "components": {
+                            "custom_data": {
+                                "forge": 2
+                            }
+                        }
                     }
                 ]
             }

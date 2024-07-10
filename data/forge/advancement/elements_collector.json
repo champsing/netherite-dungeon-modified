@@ -4,8 +4,12 @@
         "title": "初探元素之力",
         "description": "獲得一本任意種類的鍛造配方",
         "icon": {
-			"item": "minecraft:potion",
-            "nbt": "{CustomPotionColor:10017554}"
+			"id": "minecraft:potion",
+            "components": {
+                "potion_contents": {
+                    "custom_color": 10017554
+                }
+            }
 		},
         "show_toast": true,
         "announce_to_chat": true,
@@ -23,7 +27,11 @@
                         {
                             "min":1
                         },
-                        "nbt": "{recipeLevel:1}"
+                        "components": {
+                            "custom_data": {
+                                "recipe_level": 1
+                            }
+                        }
                     }
                 ]
             }
@@ -38,7 +46,11 @@
                         {
                             "min":1
                         },
-                        "nbt": "{recipeLevel:2}"
+                        "components": {
+                            "custom_data": {
+                                "recipe_level": 2
+                            }
+                        }
                     }
                 ]
             }

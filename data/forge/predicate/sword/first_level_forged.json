@@ -5,17 +5,21 @@
         "equipment": {
             "offhand": {
                 "count": 1,
-                "nbt": "{recipeLevel:1}",
-                "items": [
-                    "minecraft:knowledge_book"
-                ]
+                "items": "minecraft:knowledge_book",
+                "components": {
+                    "custom_data": {
+                        "recipe_level": 1
+                    }
+                }
             },
             "mainhand": {
                 "count": 1,
-                "nbt": "{forged:1}",
-                "items": [
-                    "minecraft:netherite_sword"
-                ]
+                "items": "minecraft:netherite_sword",
+                "components": {
+                    "custom_data": {
+                        "forged": 1
+                    }
+                }
             }
         }
     }
