@@ -1,0 +1,1 @@
+scoreboard players set 生成地牢 cvt_dungeonconfig 0
