@@ -3,7 +3,7 @@
         "title": "獄髓探勘者",
         "description": "探索500個獄髓地牢",
         "icon": {
-			"item": "minecraft:ancient_debris"
+			"id": "minecraft:ancient_debris"
 		},
         "show_toast": true,
         "announce_to_chat": true

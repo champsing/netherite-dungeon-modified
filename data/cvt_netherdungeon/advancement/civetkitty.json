@@ -3,8 +3,12 @@
         "title": "CivetKitty",
         "description": "",
         "icon": {
-			"item": "minecraft:player_head",
-			"nbt": "{SkullOwner:CivetKitty}"
+            "id": "player_head",
+            "components": {
+                "minecraft:profile": {
+                    "name": "CivetKitty"
+                }
+            }
 		},
         "show_toast": false,
         "announce_to_chat": false

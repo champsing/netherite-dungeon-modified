@@ -1,89 +1,88 @@
-#UUID RNG(--71..70)
+#RNG(-71..70)
 execute store result score @s cvt_dungeonrng run random roll -71..70
 
 #Structure Selection
-#rng_macro takes 4 parameters: rngscore, room_name, dX, dZ 
-function cvt_netherdungeon:rng_macro {rngscore: -71..-70, room_name: 001, dX: -3, dZ: -3}
-execute if score @s cvt_dungeonrng matches -71..-70 run place template cvt_netherdungeon:rooms/001 -3 0 -3
-execute if score @s cvt_dungeonrng matches -69..-68 run place template cvt_netherdungeon:rooms/002 -3 0 -3
-execute if score @s cvt_dungeonrng matches -67..-66 run place template cvt_netherdungeon:rooms/003 -3 0 -3
-execute if score @s cvt_dungeonrng matches -65..-64 run place template cvt_netherdungeon:rooms/004 -3 0 -3
-execute if score @s cvt_dungeonrng matches -63..-62 run place template cvt_netherdungeon:rooms/005 -5 0 -5
-execute if score @s cvt_dungeonrng matches -61..-60 run place template cvt_netherdungeon:rooms/006 -3 0 -3
-execute if score @s cvt_dungeonrng matches -59..-58 run place template cvt_netherdungeon:rooms/007 -3 0 -3
-execute if score @s cvt_dungeonrng matches -57..-56 run place template cvt_netherdungeon:rooms/008 -3 0 -3
-execute if score @s cvt_dungeonrng matches -55..-54 run place template cvt_netherdungeon:rooms/009 -5 0 -5
-execute if score @s cvt_dungeonrng matches -53..-52 run place template cvt_netherdungeon:rooms/010 -3 0 -3
-execute if score @s cvt_dungeonrng matches -51..-50 run place template cvt_netherdungeon:rooms/011 -3 0 -3
-execute if score @s cvt_dungeonrng matches -49..-48 run place template cvt_netherdungeon:rooms/012 -3 0 -3
-execute if score @s cvt_dungeonrng matches -47..-46 run place template cvt_netherdungeon:rooms/013 -3 0 -3
-execute if score @s cvt_dungeonrng matches -45..-40 run place template cvt_netherdungeon:rooms/014 -3 0 -3
-execute if score @s cvt_dungeonrng matches -43..-42 run place template cvt_netherdungeon:rooms/015 -3 0 -3
-execute if score @s cvt_dungeonrng matches -41..-40 run place template cvt_netherdungeon:rooms/016 -3 0 -3
-execute if score @s cvt_dungeonrng matches -39..-38 run place template cvt_netherdungeon:rooms/017 -3 0 -3
-execute if score @s cvt_dungeonrng matches -37..-36 run place template cvt_netherdungeon:rooms/018 -5 0 -5
-execute if score @s cvt_dungeonrng matches -35..-34 run place template cvt_netherdungeon:rooms/019 -5 0 -5
-execute if score @s cvt_dungeonrng matches -33..-32 run place template cvt_netherdungeon:rooms/020 -3 0 -3
-execute if score @s cvt_dungeonrng matches -31..-30 run place template cvt_netherdungeon:rooms/021 -3 0 -3
-execute if score @s cvt_dungeonrng matches -29..-28 run place template cvt_netherdungeon:rooms/022 -3 0 -3
-execute if score @s cvt_dungeonrng matches -27..-26 run place template cvt_netherdungeon:rooms/023 -3 0 -3
-execute if score @s cvt_dungeonrng matches -25..-24 run place template cvt_netherdungeon:rooms/024 -3 0 -3
-execute if score @s cvt_dungeonrng matches -23..-22 run place template cvt_netherdungeon:rooms/025 -3 0 -3
-execute if score @s cvt_dungeonrng matches -21..-20 run place template cvt_netherdungeon:rooms/026 -3 0 -3
-execute if score @s cvt_dungeonrng matches -19..-18 run place template cvt_netherdungeon:rooms/027 -3 0 -3
-execute if score @s cvt_dungeonrng matches -17..-16 run place template cvt_netherdungeon:rooms/028 -5 0 -5
-execute if score @s cvt_dungeonrng matches -15..-14 run place template cvt_netherdungeon:rooms/029 -3 0 -3
-execute if score @s cvt_dungeonrng matches -13..-12 run place template cvt_netherdungeon:rooms/030 -3 0 -3
-execute if score @s cvt_dungeonrng matches -11..-10 run place template cvt_netherdungeon:rooms/031 -3 0 -3
-execute if score @s cvt_dungeonrng matches -9..-8 run place template cvt_netherdungeon:rooms/032 -5 0 -5
-execute if score @s cvt_dungeonrng matches -7..-6 run place template cvt_netherdungeon:rooms/033 -3 0 -3
-execute if score @s cvt_dungeonrng matches -5..-4 run place template cvt_netherdungeon:rooms/034 -3 0 -3
-execute if score @s cvt_dungeonrng matches -3..-2 run place template cvt_netherdungeon:rooms/035 -3 0 -3
-execute if score @s cvt_dungeonrng matches -1..0 run place template cvt_netherdungeon:rooms/036 -3 0 -3
-execute if score @s cvt_dungeonrng matches 1..2 run place template cvt_netherdungeon:rooms/037 -3 0 -3
-execute if score @s cvt_dungeonrng matches 3..4 run place template cvt_netherdungeon:rooms/038 -3 0 -3
-execute if score @s cvt_dungeonrng matches 5..6 run place template cvt_netherdungeon:rooms/039 -3 0 -3
-execute if score @s cvt_dungeonrng matches 7..8 run place template cvt_netherdungeon:rooms/040 -3 0 -3
-execute if score @s cvt_dungeonrng matches 9..10 run place template cvt_netherdungeon:rooms/041 -3 0 -3
-execute if score @s cvt_dungeonrng matches 11..12 run place template cvt_netherdungeon:rooms/042 -5 0 -5
-execute if score @s cvt_dungeonrng matches 13..14 run place template cvt_netherdungeon:rooms/043 -3 0 -3
-execute if score @s cvt_dungeonrng matches 15..16 run place template cvt_netherdungeon:rooms/044 -3 0 -3
-execute if score @s cvt_dungeonrng matches 17..18 run place template cvt_netherdungeon:rooms/045 -3 0 -3
-execute if score @s cvt_dungeonrng matches 19..20 run place template cvt_netherdungeon:rooms/046 -3 0 -3
-execute if score @s cvt_dungeonrng matches 21..22 run place template cvt_netherdungeon:rooms/047 -3 0 -3
-execute if score @s cvt_dungeonrng matches 23..24 run place template cvt_netherdungeon:rooms/048 -5 0 -5
-execute if score @s cvt_dungeonrng matches 25 run place template cvt_netherdungeon:rooms/049 -3 0 -3
-#Special Dungeon Selection
-execute if score @s cvt_dungeonrng matches 26 run place template cvt_netherdungeon:rooms/frozen_strayers -3 0 -3
-execute if score @s cvt_dungeonrng matches 27..28 run place template cvt_netherdungeon:rooms/050 -3 0 -3
-execute if score @s cvt_dungeonrng matches 29..30 run place template cvt_netherdungeon:rooms/051 -3 0 -3
-execute if score @s cvt_dungeonrng matches 31..32 run place template cvt_netherdungeon:rooms/052 -3 0 -3
-execute if score @s cvt_dungeonrng matches 33..34 run place template cvt_netherdungeon:rooms/053 -3 0 -3
-execute if score @s cvt_dungeonrng matches 35..36 run place template cvt_netherdungeon:rooms/054 -5 0 -5
-execute if score @s cvt_dungeonrng matches 37..38 run place template cvt_netherdungeon:rooms/055 -3 0 -3
-execute if score @s cvt_dungeonrng matches 39..40 run place template cvt_netherdungeon:rooms/056 -3 0 -3
-execute if score @s cvt_dungeonrng matches 41..42 run place template cvt_netherdungeon:rooms/057 -3 0 -3
-execute if score @s cvt_dungeonrng matches 43..44 run place template cvt_netherdungeon:rooms/058 -3 0 -3
-execute if score @s cvt_dungeonrng matches 45..46 run place template cvt_netherdungeon:rooms/059 -3 0 -3
-execute if score @s cvt_dungeonrng matches 47..48 run place template cvt_netherdungeon:rooms/060 -5 0 -5
-execute if score @s cvt_dungeonrng matches 49 run place template cvt_netherdungeon:rooms/061 -3 0 -3
-execute if score @s cvt_dungeonrng matches 50 run place template cvt_netherdungeon:rooms/062 -3 0 -3
-execute if score @s cvt_dungeonrng matches 51 run place template cvt_netherdungeon:rooms/063 -3 0 -3
-execute if score @s cvt_dungeonrng matches 52 run place template cvt_netherdungeon:rooms/064 -3 0 -3
-execute if score @s cvt_dungeonrng matches 53 run place template cvt_netherdungeon:rooms/065 -3 0 -3
-execute if score @s cvt_dungeonrng matches 54 run place template cvt_netherdungeon:rooms/066 -5 0 -5
-execute if score @s cvt_dungeonrng matches 55..56 run place template cvt_netherdungeon:rooms/067 -3 0 -3
-execute if score @s cvt_dungeonrng matches 57..58 run place template cvt_netherdungeon:rooms/068 -3 0 -3
-execute if score @s cvt_dungeonrng matches 59 run place template cvt_netherdungeon:rooms/069 -3 0 -3
-#Special Dungeon Selection
-execute if score @s cvt_dungeonrng matches 60 run place template cvt_netherdungeon:rooms/crimson_wither_skeleton -3 0 -3
-execute if score @s cvt_dungeonrng matches 61..62 run place template cvt_netherdungeon:rooms/070 -3 0 -3
-execute if score @s cvt_dungeonrng matches 63..64 run place template cvt_netherdungeon:rooms/071 -3 0 -3
-execute if score @s cvt_dungeonrng matches 65..66 run place template cvt_netherdungeon:rooms/072 -5 0 -5
-execute if score @s cvt_dungeonrng matches 67 run place template cvt_netherdungeon:rooms/073 -10 0 -10
-execute if score @s cvt_dungeonrng matches 68 run place template cvt_netherdungeon:rooms/074 -5 0 -5
-execute if score @s cvt_dungeonrng matches 69 run place template cvt_netherdungeon:rooms/075 -11 0 -11
-execute if score @s cvt_dungeonrng matches 70 run place template cvt_netherdungeon:rooms/076 -3 0 -3
+#rng_macro takes 4 parameters: rng_score, room_name, dX, dZ 
+function cvt_netherdungeon:rng_macro {rng_score: -71..-70, room_name: 001, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -69..-68, room_name: 002, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -67..-66, room_name: 003, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -65..-64, room_name: 004, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -63..-62, room_name: 005, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: -61..-60, room_name: 006, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -59..-58, room_name: 007, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -57..-56, room_name: 008, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -55..-54, room_name: 009, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: -53..-52, room_name: 010, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -51..-50, room_name: 011, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -49..-48, room_name: 012, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -47..-46, room_name: 013, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -45..-40, room_name: 014, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -43..-42, room_name: 015, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -41..-40, room_name: 016, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -39..-38, room_name: 017, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -37..-36, room_name: 018, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: -35..-34, room_name: 019, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: -33..-32, room_name: 020, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -31..-30, room_name: 021, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -29..-28, room_name: 022, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -27..-26, room_name: 023, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -25..-24, room_name: 024, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -23..-22, room_name: 025, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -21..-20, room_name: 026, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -19..-18, room_name: 027, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -17..-16, room_name: 028, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: -15..-14, room_name: 029, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -13..-12, room_name: 030, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -11..-10, room_name: 031, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -9..-8, room_name: 032, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: -7..-6, room_name: 033, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -5..-4, room_name: 034, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -3..-2, room_name: 035, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: -1..0, room_name: 036, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 1..2, room_name: 037, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 3..4, room_name: 038, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 5..6, room_name: 039, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 7..8, room_name: 040, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 9..10, room_name: 041, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 11..12, room_name: 042, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: 13..14, room_name: 043, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 15..16, room_name: 044, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 17..18, room_name: 045, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 19..20, room_name: 046, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 21..22, room_name: 047, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 23..24, room_name: 048, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: 25, room_name: 049, dX: -3, dZ: -3}
+#frozen_strayers
+function cvt_netherdungeon:rng_macro {rng_score: 26, room_name: frozen_strayers, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 27..28, room_name: 050, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 29..30, room_name: 051, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 31..32, room_name: 052, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 33..34, room_name: 053, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 35..36, room_name: 054, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: 37..38, room_name: 055, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 39..40, room_name: 056, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 41..42, room_name: 057, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 43..44, room_name: 058, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 45..46, room_name: 059, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 47..48, room_name: 060, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: 49, room_name: 061, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 50, room_name: 062, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 51, room_name: 063, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 52, room_name: 064, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 53, room_name: 065, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 54, room_name: 066, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: 55..56, room_name: 067, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 57..58, room_name: 068, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 59, room_name: 069, dX: -3, dZ: -3}
+#crimson_wither_skeleton
+function cvt_netherdungeon:rng_macro {rng_score: 60, room_name: crimson_wither_skeleton, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 61..62, room_name: 070, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 63..64, room_name: 071, dX: -3, dZ: -3}
+function cvt_netherdungeon:rng_macro {rng_score: 65..66, room_name: 072, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: 67, room_name: 073, dX: -10, dZ: -10}
+function cvt_netherdungeon:rng_macro {rng_score: 68, room_name: 074, dX: -5, dZ: -5}
+function cvt_netherdungeon:rng_macro {rng_score: 69, room_name: 075, dX: -11, dZ: -11}
+function cvt_netherdungeon:rng_macro {rng_score: 70, room_name: 076, dX: -3, dZ: -3}
 
 #Lava Adjusting
 execute unless block ~ 31 ~ lava run function cvt_netherdungeon:spillproof

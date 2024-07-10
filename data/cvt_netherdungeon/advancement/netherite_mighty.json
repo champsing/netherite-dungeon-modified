@@ -3,7 +3,7 @@
         "title": "統「獄」天下",
         "description": "探索2000個獄髓地牢",
         "icon": {
-			"item": "minecraft:netherite_block"
+			"id": "minecraft:netherite_block"
 		},
         "show_toast": true,
         "announce_to_chat": true,
