@@ -1,8 +1,9 @@
 #RNG(-71..70)
-execute store result score @s cvt_dungeonrng run random roll -71..70
+execute store result score @s cvt_dungeonrng run random value -71..70
 
 #Structure Selection
 #rng_macro takes 4 parameters: rng_score, room_name, dX, dZ 
+#$execute if score @s cvt_dungeonrng matches $(rng_score) run place template cvt_netherdungeon:rooms/$(room_name) $(dX) 0 $(dZ)
 function cvt_netherdungeon:rng_macro {rng_score: -71..-70, room_name: 001, dX: -3, dZ: -3}
 function cvt_netherdungeon:rng_macro {rng_score: -69..-68, room_name: 002, dX: -3, dZ: -3}
 function cvt_netherdungeon:rng_macro {rng_score: -67..-66, room_name: 003, dX: -3, dZ: -3}
