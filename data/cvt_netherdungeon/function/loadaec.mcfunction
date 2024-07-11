@@ -1,4 +1,4 @@
-scoreboard players set cvt_netherdungeontimer cvt_scanprogress 0
+scoreboard players reset cvt_netherdungeontimer cvt_scanprogress
 
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:40,Tags:["cvt_nethersearch"]}
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:40,Tags:["cvt_nethersearch"]}
