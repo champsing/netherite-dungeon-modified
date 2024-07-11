@@ -6,8 +6,7 @@ scoreboard objectives add forge trigger
 
 #the period of each aec raycast, referring to tick.mcfunction
 scoreboard players set 搜尋時間 cvt_dungeonconfig 1200
-#the lifetime for the aecs finding ancient debrises, referring to raycast.mcfunction
-scoreboard players set 搜尋標記自毀壽命 cvt_dungeonconfig 32
-
+#the lifetime (ticks) for the aecs finding ancient debrises, referring to raycast.mcfunction
+scoreboard players set 搜尋標記自毀壽命 cvt_dungeonconfig 40
 #set the status to Enabled
 scoreboard players set 生成地牢 cvt_dungeonconfig 0

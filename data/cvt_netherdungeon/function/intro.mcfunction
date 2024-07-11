@@ -1,3 +1,3 @@
 tellraw @a {"text":">> 已成功載入由 ","color":"yellow","extra":[{"text":"CivetKitty","color":"aqua"},{"text":" 製作的 ","color":"yellow"},{"text":"獄髓地牢資料包","color":"blue","bold":true,"italic":true,"underlined":true},{"text":"!","color":"yellow"}]}
-tellraw @a {"text":">> ","color":"yellow","extra": [{"text": "香榭 Champsing","color":"aqua","bold": true},{"text":"獨家魔改版","color":"yellow"}]}
+tellraw @a {"text":">> ","color":"yellow","extra": [{"text": "香榭 Champsing","color":"aqua","bold": true},{"text":" 獨家魔改版","color":"yellow"}]}
 tellraw @a {"text":">> 支援","color":"yellow","extra": [{"text": "1.21","color":"aqua","bold": true}]}
